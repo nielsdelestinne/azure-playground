@@ -14,9 +14,7 @@ public class StorageAccount {
 
     private static final Logger logger = LoggerFactory.getLogger(StorageAccount.class);
 
-
     public static BlobServiceClient createBlobServiceClient() {
-
         return new BlobServiceClientBuilder()
                 .endpoint("https://%s.storage.windows.net".formatted(Secrets.STORAGE_ACCOUNT_NAME))
                 .connectionString(Secrets.CONNECTION_STRING)

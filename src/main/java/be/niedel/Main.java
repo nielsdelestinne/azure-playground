@@ -6,7 +6,6 @@ import static be.niedel.storageaccount.StorageAccount.uploadBlob;
 
 public class Main {
     public static void main(String[] args) {
-
         try {
             var animalsContainerClient = createBlobContainerClient(createBlobServiceClient(), "animals");
             uploadBlob(animalsContainerClient, "cat.jpg");
